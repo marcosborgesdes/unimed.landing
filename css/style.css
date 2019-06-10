@@ -1,0 +1,428 @@
+/* Reset */
+body, h1, h2, h3, p, ul {
+    padding: 0px;
+}
+
+body {
+    font-family: 'Trebuchet MS', serif;
+    color: #232a32;
+}
+
+/* Menu */
+
+.menu {
+    background: #ffffff;
+    padding: 20px 0;
+}
+
+.menu-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.menu-container::after, .menu-container::before {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.menu-logo {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+}
+
+@media (max-width:739px) {
+    .menu-logo {
+        float: none;
+        clear: both;
+    }
+}
+
+/* Introdução */
+
+.intro {
+    background: url('../imagens/background-header.jpg') no-repeat center center;
+    background-size:cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 150px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.chamada h1 {
+    text-transform: uppercase;
+    font-size: 3em;
+    text-align: center;
+    font-family: 'trebuchet MS'
+}
+
+.chamada p {
+    font-size: 3.125em;
+    text-align: center;
+}
+
+.chamada {
+    width: 460px;
+    float: left;
+    margin: 40px 10px;
+}
+
+.chamadaeform {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.chamadaeform::after, .chamadaeform::before {
+    content:'';
+    display: table;
+    clear: both;
+}
+
+.form {
+    width: 460px;
+    float: left;
+    margin: 0 05px;
+    background-color: #b1d249;
+    border-radius: 10px;
+}
+
+.form h3 {
+    font-size: 1.25em;
+    text-align: center;
+    color: #005f55;
+}
+
+.form p {
+    font-size: 1.05em;
+    text-align: center;
+}
+
+.form input {
+    width: 300px;
+    font-size: 1.25em;
+    margin-bottom: 20px;
+    font-family: ubuntu, serif;
+    padding: 10px;
+    border: none;
+}
+
+.form button{
+    background: #005f55;
+    font-family: 'Trebuchet MS', serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.25em;
+    width: 325px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+@media (min-width:740px) and (max-width: 980px) {
+    .chamadaeform {
+        max-width: 720px;
+    }
+    .chamada {
+        width: 350px;
+    }
+    .form {
+        width: 340px;
+        margin: 10px 0;
+    }
+    
+    .chamada h1 {
+    font-size: 3em;
+    }
+    
+    .chamada p {
+    font-size: 2em;
+    }
+}
+
+@media (max-width: 739px){
+    .chamadaeform {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    .chamada {
+        width: 300px;
+    }
+    
+    .chamada h1{
+        font-size: 3em;
+        width: 300px;
+        text-align: center;
+    }
+    
+    .chamada p {
+        width: 300px;
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    .chamada p {
+    font-size: 2em;
+    }
+    
+    .form {
+        width: 300px;
+        margin: 0 auto;
+    }
+    
+    .form input {
+        width: 250px;
+        margin: 10px auto;
+    }
+    
+     .form button {
+        width: 275px;
+        margin: 10px auto;
+    }
+   
+}
+
+/*evento*/
+
+.evento {
+    background: #421664;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.evento-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.evento-container::after, .evento-containers::before {
+    content:'';
+    display: table;
+    clear:both;
+}
+
+.evento-item {
+    width: 450px;
+    float: left;
+    margin: 0 20px 20px 10px;
+}
+
+.evento-item img {
+    width: 450px;
+    display: block;
+    float: left;
+    margin: 0 20px 20px 10px;
+}
+
+.evento-item h2{
+    max-width: 460px;
+    text-align: center;
+    font-size: 2.25em;
+    margin-bottom: 80px;
+    color: #ffff;
+    margin: 0 auto;
+}
+
+.evento-item p {
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 1.em;
+    max-width: 400px;
+    color: #fff;
+    margin: 30px auto;
+}
+
+.evento-item a {
+    font-size: 1.125em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-align: center;
+    background: #ffffff;
+    color: #005f55;
+    width: 180px;
+    margin: 0 auto;
+    display: block;
+    border: none;
+    border-radius: 20px;
+}
+
+@media (min-width: 740px) and (max-width: 980px) {
+    .evento-container {
+      max-width: 720px;  
+    }
+    .evento-item {
+        width: 330px;
+    }
+    .evento-item img {
+        width: 330px;
+    }
+}
+
+@media (max-width: 739px){
+    .evento-container {
+        max-width: 300px;
+    }
+    .evento-item {
+        width: 300px;
+        margin: 10px 0;
+    }
+    .evento-item img {
+        width: 300px;
+        margin: 10px 0;
+    }
+}
+
+
+/* Consultas */
+
+.consulta {
+    padding: 50px 0;
+    background-color: #005f55;
+    
+}
+
+.consulta h2 {
+    text-align: center;
+    font-size: 2.25em;
+    margin-bottom: 60px;
+    color: #ffca05;
+    
+}
+
+.consulta-container {
+    max-width: 960px;
+    margin: 0 auto;
+    
+}
+
+.consulta-container::before, .consulta-container::after {
+    content:'';
+    display: table;
+    clear:both;
+}
+
+.consulta-item {
+    width: 300px;
+    float: left;
+    margin: 0 10px 20px 10px;
+}
+
+.consulta-item h3 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.consulta-item p {
+    font-size: 0.875em;
+    line-height: 1.4em;
+    text-align: center;
+    color: #ffffff;
+}
+
+.consulta-item img {
+    width: 300px;
+    float: left;
+    margin: 0 10px 20px 10px;
+}
+
+@media (min-width:740px) and (max-width: 980px) {
+    .consulta-container {
+        max-width: 720px;
+    }
+    .consulta-item {
+        width: 220px;
+    }
+    .consulta-item img {
+        width: 220px;
+    }
+}
+
+@media (max-width: 739px){
+    .consulta-container {
+        max-width: 300px;
+    }
+    .consulta-item {
+        width: 300px;
+        margin: 0 auto;
+    }
+}
+
+
+/*Footer*/
+
+.footer{
+    padding: 30px 0;   
+}
+
+.footer-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.footer-container::after, .footer-container::before {
+    content:'';
+    display: table;
+    clear: both;
+}
+
+.footer-item-imagem {
+    width: 460px;
+    margin: 10px 10px;
+    float: left;
+}
+
+.footer-item-texto h3 {
+    font-size: 1.5em;
+    color: #005f55;
+}
+
+.footer-item-texto p {
+    line-height: 1.4em;
+    margin: 0 05px;
+    font-size: 1.25em;
+    color: #5b5c65;
+}
+
+.footer-item-texto {
+    width: 460px;
+    float: right;
+}
+
+@media (min-width:740px) and (max-width: 980px) {
+    .footer-container {
+        max-width: 720px;
+    }
+    .footer-item-texto {
+        width: 380px;
+        
+    }
+    .footer-item-imagem {
+        width: 300px;
+    }
+}
+
+@media (max-width: 739px){
+    .footer-container {
+        max-width: 300px;
+    }
+    
+    .footer-item-texto {
+        float: none;
+        width: 300px;
+        text-align: center;
+    }
+    
+    .footer-item-imagem {
+        float: none;
+        width: 145px;
+        margin: 0 auto;
+    }
+}
+
+
